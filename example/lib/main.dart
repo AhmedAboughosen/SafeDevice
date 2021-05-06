@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:save_device/save_device.dart';
+import 'package:save_device/safe_device.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
     bool isRooted;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      isRooted = await SaveDevice.isRooted;
+      isRooted = await SafeDevice.isRooted;
     } on PlatformException {
       isRooted = false;
     }
@@ -49,7 +49,7 @@ class _MyAppState extends State<MyApp> {
     bool isRealDevice;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      isRealDevice = await SaveDevice.isRealDevice;
+      isRealDevice = await SafeDevice.isRealDevice;
     } on PlatformException {
       isRealDevice = false;
     }
