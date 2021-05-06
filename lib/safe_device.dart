@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-class SaveDevice {
+class SafeDevice {
   static const MethodChannel _channel = const MethodChannel('save_device');
 
 
