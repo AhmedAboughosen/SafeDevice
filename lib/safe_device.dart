@@ -5,7 +5,6 @@ import 'package:flutter/services.dart';
 class SafeDevice {
   static const MethodChannel _channel = const MethodChannel('save_device');
 
-
   // Checks whether device is real or emulator
   static Future<bool> get isRealDevice async {
     final bool isRealDevice = await _channel.invokeMethod('isRealDevice');
