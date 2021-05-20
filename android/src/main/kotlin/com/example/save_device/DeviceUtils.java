@@ -36,7 +36,6 @@ public class DeviceUtils {
                 "L3N5c3RlbS9iaW4vZmFpbHNhZmUvc3U=",
                 "L2RhdGEvbG9jYWwvc3U=", "L3N1L2Jpbi9zdQ=="};
         for (String path : paths) {
-            System.out.println(decodeString(path));
             if (new File(decodeString(path)).exists()) return true;
         }
         return false;
