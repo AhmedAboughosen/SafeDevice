@@ -11,6 +11,7 @@ public class EmulatorCheck {
                 || Build.MODEL.contains("google_sdk")
                 || Build.MODEL.contains("Emulator")
                 || Build.MODEL.contains("Android SDK built for x86")
+                || Build.MODEL.contains("Android SDK built for x64")
                 || Build.MANUFACTURER.contains("Genymotion")
                 || Build.MANUFACTURER.contains("unknown")
                 || (Build.BRAND.startsWith("generic") && Build.DEVICE.startsWith("generic"))
