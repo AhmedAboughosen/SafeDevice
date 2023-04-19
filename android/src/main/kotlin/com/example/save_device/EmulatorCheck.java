@@ -12,12 +12,12 @@ public class EmulatorCheck {
                 Build.PRODUCT.contains("Droid4X") ||
                 Build.PRODUCT.contains("nox") ||
                 Build.PRODUCT.equals("Android SDK built for x86_64") ||
-                Build.PRODUCT.equals("Android SDK built for x86")
-        Build.PRODUCT.contains("sdk_x86") ||
-        Build.PRODUCT.contains("sdk_x64") ||
-        Build.PRODUCT.contains("sdk_x86_64") ||
+                Build.PRODUCT.equals("Android SDK built for x86") ||
+                Build.PRODUCT.contains("sdk_x86") ||
+                Build.PRODUCT.contains("sdk_x64") ||
+                Build.PRODUCT.contains("sdk_x86_64") ||
                 Build.PRODUCT.contains("sdk_google") ||
-                Build.PRODUCT.contains("vbox86p")){
+                Build.PRODUCT.contains("vbox86p")) {
             return true;
         }
 
