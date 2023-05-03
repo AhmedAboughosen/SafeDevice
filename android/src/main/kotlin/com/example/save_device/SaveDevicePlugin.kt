@@ -46,7 +46,7 @@ class SaveDevicePlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
 
         if (call.method == "isRealDevice") {
-            result.success(!EmulatorCheck.isEmulator() && !checkEmulatorFiles())
+            result.success(!EmulatorCheck.isEmulator() )
         }
 
         if (call.method == "isRooted") {
